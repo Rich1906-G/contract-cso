@@ -1,0 +1,27 @@
+TailwindCss
+
+1. npm install -D tailwindcss postcss autoprefixer
+2. npx tailwindcss init -p
+3. npm run dev (Lakukan Di Terminal)
+
+Laravel Excel
+1. extension=gd (Buka file php.ini di C:\xampp\php\php.ini.Cari baris yang mengandung ;extension=gd. ganti jadi )
+2. composer require "maatwebsite/excel:^3.1"/composer require maatwebsite/excel:^3.1.58
+3. composer update --with-all-dependencies
+"Jika Masih Error"
+- composer install --ignore-platform-req=ext-gd
+3. composer require maatwebsite/excel
+
+
+MacOs 
+1. Pastikan Sudah Menginstal MySql
+2. Cek Lokasi mysqldump -> which mysqldump (mengetiikan perintah disamping di dalam terminal)
+3. Perhatikan PATH Di Dalam Environtment 
+   a. Jika Belum Ada 
+     - Buka file .zshrc (jika kamu menggunakan Zsh sebagai shell, yang default di macOS terbaru) atau .bash_profile (jika menggunakan Bash) 
+     - Tambahkan baris berikut di bagian akhir file -> export PATH="/usr/local/mysql/bin:$PATH" 
+     - Simpan file, dan muat ulang terminal dengan menjalankan -> source ~/.zshrc Atau jika menggunakan BASH source ~/.bash_profile
+4. Jalankan mysqldump di PHP 
+
+
+Laravel Notify 
