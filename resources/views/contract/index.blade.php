@@ -384,7 +384,7 @@
                 </thead>
                 <tbody>
                     @foreach ($contract as $con)
-                        <tr class="">
+                        <tr class="xl:text-base">
                             <td class="px-4 py-3 lg:py-0 ">{{ $contract->firstItem() + $loop->index }}</td>
                             <td class="px-4 py-3 lg:py-0 ">{{ $con->branch }}</td>
                             <td class="px-4 py-3 lg:py-0  ">{{ $con->cust_id }}</td>

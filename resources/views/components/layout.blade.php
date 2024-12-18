@@ -28,13 +28,14 @@
 
 
         <main>
-            <div class="md:mx-auto md:max-w-8xl xl:max-w-9xl px-4 py-6 sm:px-6 lg:mx-2 lg:px-0">
+            <div class="px-4 py-6 sm:px-6 mx-auto max-w-8xl md:max-w-8xl lg:px-0 xl:max-w-full xl:p-4">
+                {{-- flex md:mx-auto md:max-w-8xl xl:max-w-9xl 2xl:justify-center 2xl:items-center px-4 py-6 sm:px-6 lg:mx-2 lg:px-0 --}}
                 <!-- Your content -->
                 {{ $slot }}
             </div>
             <div x-cloak x-show="logout" x-transition
                 class="bg-black/50 fixed top-0 left-0 h-screen w-full flex justify-center items-center">
-                <div class="relative p-4 text-center bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+                <div class="relative p-4 text-center bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5 ">
                     <form method="post" action="{{ route('logout') }}">
                         @csrf
                         <button @click="logout = false" type="button"

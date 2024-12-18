@@ -1,5 +1,5 @@
 <nav class="bg-gray-800" x-data="{ isOpen: false }">
-    <div class="mx-auto max-w-8xl px-4 sm:px-6 lg:mx-20 lg:px-4">
+    <div class="mx-auto max-w-8xl xl:max-w-full px-4 sm:px-6 lg:mx-20 lg:px-12">
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
                 <div class="flex-shrink-0">

@@ -23,7 +23,7 @@
 
         <x-header_user>{{ $title }}</x-header_user>
         <main>
-            <div class="mx-auto max-w-8xl md:max-w-8xl px-4 py-6 sm:px-6 lg:px-0">
+            <div class="px-4 py-6 sm:px-6 mx-auto max-w-8xl md:max-w-8xl lg:px-0 xl:max-w-full xl:p-4">
                 <!-- Your content -->
                 {{ $slot }}
             </div>

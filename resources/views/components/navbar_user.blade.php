@@ -1,5 +1,5 @@
 <nav class="bg-gray-800" x-data="{ isOpen: false }">
-    <div class="mx-auto max-w-8xl px-4 sm:px-6 lg:mx-20 lg:px-4">
+    <div class="mx-auto max-w-8xl xl:max-w-full px-4 sm:px-6 lg:mx-20 lg:px-12">
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
                 <div class="flex-shrink-0">
@@ -14,16 +14,18 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden md:flex ml-4  items-center md:ml-6">
-                <button type="button" @click="logout = ! logout"
-                    class="text-white font-medium rounded-lg text-sm px-2 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                    Logout
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                        class="px-0.5" fill="#FFFFFF">
-                        <path
-                            d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
-                    </svg>
-                </button>
+            <div class="ml-4 flex items-center md:ml-6">
+                <div class="hidden md:flex">
+                    <button type="button" x-cloak @click="logout = ! logout"
+                        class="text-white font-medium rounded-lg text-sm px-2 py-2.5  text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Logout
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            class="px-0.5" fill="#FFFFFF">
+                            <path
+                                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z" />
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Profile dropdown -->
